@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+     
+    <link rel="stylesheet" type="text/css" href="./education.css">
+    <link rel="stylesheet" type="text/css" href="./smooth.css">
+  </head>
+
+  <style>
+
+/* This style sheet is for the screen */
+    /* Styles for the page that will be printed */
+    @media print {
+      /* Set the page to be in landscape orientation */
+      @page {
+        size: landscape;
+      }
+      
+      /* Hide everything except the content within the #cv-container element */
+      body * {
+        visibility: hidden;
+      }
+      #cv-container, #cv-container * {
+        visibility: visible;
+      }
+      #cv-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+    }
+
+    nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+    header {
+  background-color: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+header img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+div{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+
+h2{
+    color: white;
+    margin-right: auto;
+    margin-left: 39%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+</style>
+
+
+<body>
+
+  
+  <button id="back-to-top-btn">Back to Top</button>
+  
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+
+    <header>
+
+
+      <a href="./index.html">
+        <img src="./home-w.png" alt="Header Image">
+      </a>
+      
+      
+    </header>
+    
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2> this is an empty page</h2>
+
+
+</body>
+</html>

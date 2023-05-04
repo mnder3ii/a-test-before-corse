@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="./smooth.css">
+    <link rel="stylesheet" type="text/css" href="./education.css">
+
+  </head>
+  <style>
+
+header {
+    background-color: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header img {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex; /* Make card container flexible */
+  flex-wrap: wrap; /* Wrap items to new line if necessary */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add some space between cards */
+}
+
+
+footer {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+h3 {
+    text-align: center;
+    color: #1DA1F2;;
+    font-weight: bold;
+    margin-bottom: -15px;
+    font-size: x-large ;
+}
+
+div{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;}
+
+  .card {
+ width: auto;
+ height: 254px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+  
+
+
+
+.card3 {
+ width: auto;
+ height: 980px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 20px;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-right: 20px;
+ margin-top: 40px;
+ margin-left: 20px;
+}
+
+.card-details {
+ color: black;
+ height: 100%;
+ gap: 0.5em;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #7ea3bf;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+
+
+.card3:hover {
+ border-color: #1DA1F2;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+.card3:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card:last-child {
+  margin-right: 20px;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+  </style>
+
+
+  
+  <body>
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
+    <header>
+        <img src="./header-cv.png" alt="Header Image">
+        <a href="./index.html">
+            <img src="./home-w.png" alt="Header Image">
+          </a>
+    </header>
+
+
+<section id="phone-num">
+    <h2>Contact via phone</h2>
+  <div class="card">
+    <div class="card-details">
+        
+        <p>Call us at <a href="tel:+1234567890">123-456-7890</a> or dial the number manually.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Mohammed Bekhait</p>
+  </footer>
+
+  </body>
+</html>

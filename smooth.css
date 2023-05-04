@@ -1,0 +1,31 @@
+html, body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Fallback for browsers that do not support scroll-behavior */
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html, body {
+      scroll-behavior: 0.9s;
+    }
+  }
+
+  #back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #333;
+  }
+  

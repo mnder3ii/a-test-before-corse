@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="./smooth.css">
+    <link rel="stylesheet" type="text/css" href="./education.css">
+
+  </head>
+    
+<style>
+      /* Style the header */
+header {
+  background-color: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the sections */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* Style the contact section */
+#contact ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact li {
+  margin: 0;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px dotted #333;
+}
+
+#contact a:hover {
+  border-bottom: none;
+}
+
+#about p {
+  word-wrap: break-word;
+}
+
+
+header img {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex; /* Make card container flexible */
+  flex-wrap: wrap; /* Wrap items to new line if necessary */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add some space between cards */
+}
+
+
+
+.card {
+ width: auto;
+ height: 254px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+}
+
+.card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+  
+.card-container {
+  display: flex; /* Make card container flexible */
+  flex-wrap: wrap; /* Wrap items to new line if necessary */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add some space between cards */
+}
+
+
+  .card {
+ width: 210px;
+ height: 274px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 20px;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-right: 20;
+ margin-top: 40px;
+ margin-left: 20px;
+ 
+  display: flex; /* Make card flexible */
+  flex-direction: column; /* Stack details vertically */
+
+
+}
+
+.card2 {
+ width: auto;
+ height: 150px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 20px;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-right: 35px;
+ margin-top: 15px;
+ margin-left: 35px;
+ margin-bottom: -15px;
+}
+
+.card3 {
+ width: auto;
+ height: 980px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 20px;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-right: 20px;
+ margin-top: 40px;
+ margin-left: 20px;
+}
+
+.card-details {
+ color: black;
+ height: 100%;
+ gap: 0.5em;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #7ea3bf;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #1DA1F2;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card2:hover {
+ border-color: #1DA1F2;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card3:hover {
+ border-color: #1DA1F2;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.card2:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.card3:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card:last-child {
+  margin-right: 20px;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    }
+
+h3 {
+    text-align: center;
+    color: #1DA1F2;;
+    font-weight: bold;
+    margin-bottom: -15px;
+    font-size: x-large ;
+    }
+div{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+</style>
+
+<body>
+  
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+
+ 
+  <div id="loader"></div>
+  <button id="back-to-top-btn">Back to Top</button>
+
+<header>
+    <img src="./header-cv.png" alt="Header Image">  
+    <nav>
+      <ul>
+        <li><a href="./cv-pdf.html">CV ( pdf )</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">certificates</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+</header>
+  
+<section id="about-me">
+  <h2>About me</h2>
+  
+  <div class="card2">
+    <div class="card-details">
+      <ul>
+        <li>As a computer engineering student, you possess a strong 
+        foundation in programming languages such as Java, Python, and C++, and have 
+        experience working on diverse projects. You are a natural problem solver with 
+        an analytical mindset and an eye for detail. With self-motivation and a passion 
+        for technology, you thrive in fast-paced, collaborative environments and 
+        are driven to excel in your academic and professional pursuits.</li>
+      </ul>
+    </div>
+    <a href="./about.html" class="card-button" data-url="./about.html">learn more</a>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card2">
+    <div class="card-details">
+      <ul>
+        <li>teacher assistant in my university while also being a student</li>
+        <li>application developer</li>
+        <li>"CHE" certificate in cybersecurity</li>
+        <li>able to develop a full website</li>
+        <li>game developer</li>
+      </ul>
+    </div>
+    <a href="./experience.html" class="card-button" data-url="./experience.html">learn more</a>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card2">
+    <div class="card-details">
+      <ul>
+        <li>Degree Name : Bachelor degree in computer engineering</li>
+        <li>University Name : Kuwait College of Science and Technology</li>
+        <li>gpa : 3.2 / 4</li>
+      </ul>
+    </div>
+    <a href="./education.html" class="card-button" data-url="./education.html">learn more</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & projects</h2>
+  <div class="card2">
+    <div class="card-details">
+      <ul>
+        <li>mobile appllication development : ( Xaml , C# ) + ( flutter , dot )</li>
+        <li>game development : ( unity + C# ) + (unreal engien 5)</li>
+        <li>eathical hacker : ( kali lunix )</li>
+        <li>front end development : ( html + CSS )</li>
+        <li>robotiks and other programming : ( aduino IDE )</li>
+      </ul>
+    </div>
+    <a href="./skills.html" class="card-button" data-url="./skills.html">learn more</a>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card2">
+    <div class="card-details">
+      <ul>
+        <li>Certificate Name</li>
+        <li>Certificate Name</li>
+        <li>Certificate Name</li>
+      </ul>
+    </div>
+    <a href="./certificates.html" class="card-button" data-url="./certificates.html">learn more</a>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+
+
+  <div class="card-container">
+
+    <section>
+      <h2>E-mail</h2>
+        <div class="card">
+            <a href="./e-mail.html">
+              <div class="card-details">
+                <h4>click here to go to the meadia page</h4>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Phone</h2>
+    <div class="card">
+      <a href="./phone.html">
+        <div class="card-details">
+          <h4>click here to go to the meadia page</h4>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Meadia</h2>
+    <div class="card">
+      <a href="./meadia.html">
+        <div class="card-details">
+          <h4>click here to go to the meadia page</h4>
+        </div>
+      </a>
+    </div>
+  </section>
+
+    <section>
+      <h2>Other</h2>
+    <div class="card">
+      <a href="./meadia.html">
+        <div class="card-details">
+          <h4>click here to go to the meadia page</h4>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  </div>
+
+</section>
+
+   
+  <footer>
+    <p>&copy; 2023 Mohammed Bekhait</p>
+    <div id="contact">
+      <!-- Your contact form or other contact information here -->
+    </div>
+  </footer>
+
+  <script>
+
+
+const cards = document.querySelectorAll('.card2');
+
+cards.forEach(card => {
+  const button = card.querySelector('.card-button');
+  const url = button.getAttribute('data-url');
+  
+  card.addEventListener('click', () => {
+    window.location.href = url;
+  });
+  
+  button.addEventListener('click', event => {
+    event.stopPropagation(); // stop event from bubbling up to card
+    window.location.href = url;
+  });
+});
+
+const card = document.querySelectorAll('card-container');
+
+cards.forEach(card => {
+  const button = card.querySelector('.card-button');
+  const url = button.getAttribute('data-url');
+  
+  card.addEventListener('click', () => {
+    window.location.href = url;
+  });
+  
+  button.addEventListener('click', event => {
+    event.stopPropagation(); // stop event from bubbling up to card
+    window.location.href = url;
+  });
+});
+
+
+
+
+$('a[href="#contact"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('a[href="#certificates"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('a[href="#skills"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('a[href="#education"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('a[href="#experience"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('a[href="#about"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+
+<script src="./hv-but.js"></script>
+<script src="./loader.js"></script>
+  
+  
+
+</body>
